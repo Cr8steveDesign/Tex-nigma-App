@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Textnigma</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  </head>
+  <body>
+    <div class="container">
+      <img src="images/enigma.png" class="imgbg" />
+      <nav class="navigation">
+        <!-- <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Portfolio</li>
+        </ul> -->
+        <button id="btn-instruct">How to use!</button>
+      </nav>
+      <section id="encrypt" class="section1">
+        <h1>Tex-nigma🤖</h1>
+        <p class="subtext">This is some James Bond stuff! 🤪</p>
+        <h3>A Short intro</h3>
+        <p class="prags">
+          This project was inspired by the German Enigma machine which was a
+          device used for encryption during World War II. It used rotors to
+          scramble messages which could only be decrypted with a matching Enigma
+          machine. The machine was used extensively by the german military to
+          send secret messages, but was eventually cracked by codebreakers at
+          Bletchley Park in the UK.
+        </p>
+        <p class="prags">
+          So, unless there are codebreakers trying to bust your little message
+          encrypted here, you're safe!
+        </p>
+
+        <section class="encryption">
+          
+          <h3>Encryption Section</h3>
+          <textarea id="encrypt-entry"
+            placeholder="Enter your text here for encryption"
+          ></textarea>
+          <input type="text" id="key-btn1" placeholder="Enter key" required />
+          <input type="submit" id="encrypt-btn" value="Encrypt!" />
+          <input type="button" id="copy-btn" value="Copy Text" />
+        </section>
+
+        
+        <section class="decryption">
+          <h3>Decryption Section <span id='drop' title="Click the button to open the decryption section"> > </span></h3>
+          
+          <div id="decryptsection" class=" decryptsection1">
+          <textarea id="decrypt-entry" style="background-color: white; color: green"
+            placeholder="Enter the encrypted text here to decode the message"
+          ></textarea>
+          <input type="text" id="key-btn2" placeholder="Enter key" required />
+          <input type="submit" id="decrypt-btn" value="Decode!" />
+          <input type="button" id="paste-btn" value="Paste Text" />
+        </div>
+          
+      </section>
+
+      <footer>
+        <h6>Designed with love by @Cr8Steve Design</h6>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  </body>
+</html>
